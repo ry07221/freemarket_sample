@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'recapcha/index'
   root to: "products#index"
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
