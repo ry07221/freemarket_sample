@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 class Users::RegistrationsController < Devise::RegistrationsController
+
+  redirect_to new_user_registration_path, alert: "reCAPTCHAを承認してください" and return unless verify_recaptcha
+  
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 

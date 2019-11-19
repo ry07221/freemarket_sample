@@ -77,3 +77,7 @@ gem "recaptcha", require: "recaptcha/rails"
 gem 'carrierwave'
 gem 'mini_magick'
 
+gem 'devise'
+gem 'active_hash'
+
+gem "recaptcha", require: "recaptcha/rails"
