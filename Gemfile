@@ -72,12 +72,14 @@ end
 ruby '2.5.1'
 gem 'rails', '~> 5.2.3'
 gem 'omniauth-google-oauth2'
-gem "recaptcha", require: "recaptcha/rails"
+gem 'omniauth-facebook'
+gem 'omniauth-rails_csrf_protection'
 
 gem 'carrierwave'
 gem 'mini_magick'
 
-gem 'devise'
 gem 'active_hash'
 
 gem "recaptcha", require: "recaptcha/rails"
+
+
