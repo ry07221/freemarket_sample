@@ -20,3 +20,7 @@
   .actions
     = f.submit "Sign up"
 = render "devise/shared/links"
+
+= recaptcha_tags
+= f.submit "次へ進む", class:"button back-red font-white"
+
