@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users 
   devise_scope :user do
-    ## ↓登録方法の選択ページ
     get "users/select_registration", to: 'users/registrations#select', as: :select_registration
   end
   
@@ -23,3 +22,4 @@ Rails.application.routes.draw do
   resources :categories, only: [:index, :show]
   
 end
+
