@@ -5,9 +5,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   redirect_to new_user_registration_path, alert: "reCAPTCHAを承認してください" and return unless verify_recaptcha
   
   def select  ##登録方法の選択ページ
-    session.delete(:"omniauth.auth") if session["omniauth.auth"]
-  end 
-
+    redirect_to root_path, alert: "ログインしています。" if user_signed_in?
+    @auth_text = "で登録する"
+    session.delete(:"devise.sns_auth") if session["devise.sns_auth"]
+  end
 
   def new
     ## ↓sessionにsns認証のデータがある場合
