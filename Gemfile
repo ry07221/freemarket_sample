@@ -86,3 +86,4 @@ gem "recaptcha", require: "recaptcha/rails"
 gem 'kaminari'
 gem 'activerecord-import'
 gem 'ancestry'
+gem 'payjp'
