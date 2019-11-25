@@ -1,0 +1,2 @@
+"id","email","encrypted_password","nickname","avatar","introduction","first_name","first_name_reading","last_name","last_name_reading","birthday","earnings","points","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at"
+1,"uny0102@gmail.com","$2a$11$5E6O1lTu2ClCP.XFGy3JPOmdzlo8dsILdSN2mQIGqA.iZ8TBZKJgu","uny0102@gmail.com",,,"山田","ヤマダ","太郎","タロウ","2014-02-02",0,0,,,,"2019-09-23 16:54:23","2019-09-23 16:54:23"

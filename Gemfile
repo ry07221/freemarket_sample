@@ -83,3 +83,6 @@ gem 'active_hash'
 gem "recaptcha", require: "recaptcha/rails"
 
 
+gem 'kaminari'
+gem 'activerecord-import'
+gem 'ancestry'
