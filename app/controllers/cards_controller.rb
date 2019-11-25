@@ -11,6 +11,7 @@ class CardsController < ApplicationController
 
     # params[:card_token]に「tok_hogehoge」という形でカードのトークンが送られてきている
     customer = Card.regist_customer(params[:card_token], email) ## customerを作成
+
     ## 保存に成功した場合
     @card.user_id = current_user.id
     @card.save
@@ -19,7 +20,6 @@ class CardsController < ApplicationController
     ## 保存に失敗した場合
     @card = Card.new(customer_token: customer&.id)
     redirect_to action: "new", alert: "カードの登録に失敗しました。" and return if @card.invalid? 
-    
   end
 
   def show
