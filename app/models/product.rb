@@ -19,5 +19,9 @@ class Product < ApplicationRecord
   enum expected_date:{"1〜2日で発送": 0, "2〜3日で発送": 1, "4〜7日で発送": 2}
   enum deal:{"販売中": 0, "売り切れ": 1}
 
+  def self.search_by_category(category)
+    return Item.where(category_id: category).includes(:item_images)
+  end
+
 end
 
