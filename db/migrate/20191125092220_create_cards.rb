@@ -1,10 +1,10 @@
-class CreateCredits < ActiveRecord::Migration[5.1]
+class CreateCards < ActiveRecord::Migration[5.2]
   def change
-    create_table :credits do |t|
+    create_table :cards do |t|
       t.references :user,     null: false, foreign_key: true
       t.integer :customer_id
+
       t.timestamps
     end
   end
 end
-

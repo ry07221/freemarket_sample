@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+
   get 'categories/show'
+
   devise_for :users 
   devise_scope :user do
     get "users/select_registration", to: 'users/registrations#select', as: :select_registration
@@ -21,6 +23,8 @@ Rails.application.routes.draw do
   end
 
   resources :categories, only: [:index, :show]
+
+  resources :cards, only: [:new, :create, :show, :destroy]
   
 end
 
