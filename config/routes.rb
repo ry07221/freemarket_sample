@@ -20,6 +20,10 @@ Rails.application.routes.draw do
     member do
       post "purchase"
     end
+
+    collection do
+      get "search"
+    end
   end
 
   resources :categories, only: [:index, :show]
@@ -27,4 +31,5 @@ Rails.application.routes.draw do
   resources :cards, only: [:new, :create, :show, :destroy]
   
 end
+
 
