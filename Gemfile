@@ -87,3 +87,5 @@ gem 'kaminari'
 gem 'activerecord-import'
 gem 'ancestry'
 gem 'payjp'
+
+gem 'ransack'
