@@ -24,3 +24,4 @@ Rails.application.routes.draw do
   resource :cards, only: [:new, :create, :show, :update, :destroy]
 
 end
+
